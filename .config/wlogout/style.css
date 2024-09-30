@@ -1,0 +1,67 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(12, 12, 12, 0.95);
+}
+
+button {
+    border-radius: 0;
+    border-color: black;
+	text-decoration-color: transparent;
+    color: transparent;
+	background-color: transparent;
+	border-style: solid;
+	border-width: 0px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 35%;
+}
+
+button:active, button:focus, button:hover {
+	transition-duration: 0.3s;
+}
+
+
+#logout {
+    background-image: image(url("/home/marie/.config/wlogout/icons/system-log-out.png"));
+	opacity: 0.5;
+	background-position: 65% 100%;
+}
+
+#logout:active, #logout:focus, #logout:hover {
+	opacity: 1.0;
+}
+
+#suspend {
+    background-image: image(url("/home/marie/.config/wlogout/icons/system-suspend-hibernate.png"));
+	opacity: 0.5;
+	background-position: 100% 100%;
+}
+
+#suspend:active, #suspend:focus, #suspend:hover {
+	opacity: 1.0;
+}
+
+
+#shutdown {
+    background-image: image(url("/home/marie/.config/wlogout/icons/system-shutdown.png"));
+	opacity: 0.5;
+	background-position: 0% 100%;
+}
+
+#shutdown:active, #shutdown:focus, #shutdown:hover {
+	opacity: 1.0;
+}
+
+#reboot {
+    background-image: image(url("/home/marie/.config/wlogout/icons/system-reboot.png"));
+	opacity: 0.5;
+	background-position: 35% 100%;
+}
+
+#reboot:active, #reboot:focus, #reboot:hover {
+	opacity: 1.0;
+}

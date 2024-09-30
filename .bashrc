@@ -64,3 +64,6 @@ C_END='\e[0m'
 
 PS1="\e[1;35m[\t]$C_GREEN\u@\h $C_BLUE\w\$$C_END "
 #PROMPT_COMMAND='hyfetch'
+
+export VISUAL=vim
+export EDITOR="$VISUAL"

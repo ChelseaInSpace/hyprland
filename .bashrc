@@ -34,7 +34,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias nnn='nnn -H'
+alias nnn='nnn -H -e'
 alias hypr='cd ~/.config/hypr/'
 alias edith='vim ~/.config/hypr/hyprland.conf'
 alias editb='vim ~/.bashrc'
@@ -62,7 +62,7 @@ C_END='\e[0m'
 
 #PS1="$C_BLACK$CB_BLUE$C_WHITE$CB_BLUE \t $C_BLUE$CB_LBLUE$C_WHITE$CB_LBLUE \u@\h $C_LBLUE$CB_CYAN$C_BLACK$CB_CYAN \w $C_CYAN$CB_LCYAN$C_BLACK$CB_LCYAN \$ $C_LCYAN$C_END "
 
-PS1="\e[1;35m<\t> $C_GREEN\u@\h $C_BLUE\w\$$C_END "
+PS1="\e[1;35m[\t]$C_END $C_GREEN\u@\h$C_END $C_BLUE\w\$$C_END "
 #PROMPT_COMMAND='hyfetch'
 
 export VISUAL=vim

@@ -62,9 +62,9 @@ C_END='\e[0m'
 check_path () {
 	PS1=""
 	if [[ "$PWD" -ef "$HOME" ]]; then 
-		PS1="$C_BLUE\w$C_END 󰁔 $C_GREEN\u@\h$C_END "
+		PS1="$C_BLUE\w$C_END 󰁔 $C_GREEN\u@\h $C_RED\$$C_END "
 	else
-		PS1="$C_BLUE\w\n$C_END  󱞩 $C_GREEN\u@\h$C_END "
+		PS1="$C_BLUE\w\n$C_END  󱞩 $C_GREEN\u@\h $C_RED\$$C_END "
 	fi
 }			
 

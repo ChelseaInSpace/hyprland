@@ -41,7 +41,6 @@ alias editb='vim ~/.bashrc'
 alias spotify='flatpak run com.spotify.Client'
 alias discord='flatpak run com.discordapp.Discord'
 
-#PS1="\[\e]133;k;start_kitty\a\]\[\e]133;D;$?\a\e]133;A\a\]\[\e]133;k;end_kitty\a\]\e[0;32m\u@\h \e[m\e[0;34m\W\$\e[m \[\e]133;k;start_suffix_kitty\a\]\[\e]2;\w\a\]\[\e]133;k;end_suffix_kitty\a\]"
 C_BLACK='\e[0;30m'
 C_RED='\e[0;31m'
 C_GREEN='\e[0;32m'
@@ -60,12 +59,18 @@ CB_LCYAN='\e[106m'
 CB_WHITE='\e[107m'
 C_END='\e[0m'
 
+check_path () {
+	PS1=""
+	if [[ "$PWD" -ef "$HOME" ]]; then 
+		PS1="$C_BLUE\w$C_END 󰁔 $C_GREEN\u@\h$C_END "
+	else
+		PS1="$C_BLUE\w\n$C_END  󱞩 $C_GREEN\u@\h$C_END "
+	fi
+}			
+
 #PS1="$C_BLACK$CB_BLUE$C_WHITE$CB_BLUE \t $C_BLUE$CB_LBLUE$C_WHITE$CB_LBLUE \u@\h $C_LBLUE$CB_CYAN$C_BLACK$CB_CYAN \w $C_CYAN$CB_LCYAN$C_BLACK$CB_LCYAN \$ $C_LCYAN$C_END "
 
-PS1="$C_MAGENTA[\t]$C_END $C_GREEN\u@\h$C_END $C_BLUE\w\$$C_END "
-#PS1="$C_BLUE\w\n$C_END 󱞩 $C_MAGENTA\t$C_END 󰁔 $C_GREEN\u@\h$C_RED\$$C_END "
-#PROMPT_COMMAND='hyfetch'
-
+PROMPT_COMMAND='check_path'
 
 export VISUAL=vim
 export EDITOR="$VISUAL"

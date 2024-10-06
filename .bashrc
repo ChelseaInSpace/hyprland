@@ -44,9 +44,12 @@ alias discord='flatpak run com.discordapp.Discord'
 C_BLACK='\e[0;30m'
 C_RED='\e[0;31m'
 C_GREEN='\e[0;32m'
+C_GREENB='\e[1;32m'
 C_YELLOW='\e[0;33m'
 C_BLUE='\e[0;34m'
+C_BLUEB='\e[1;34m'
 C_MAGENTA='\e[0;35m'
+C_MAGENTAB='\e[1;35m'
 C_CYAN='\e[0;36m'
 C_GRAY='\e[0;90m'
 C_WHITE='\e[0;97m'
@@ -62,10 +65,11 @@ C_END='\e[0m'
 check_path () {
 	PS1=""
 	if [[ "$PWD" -ef "$HOME" ]]; then 
-		PS1="$C_BLUE\w$C_END 󰁔 $C_GREEN\u@\h $C_RED\$$C_END "
+		PS1="$C_BLUEB\w$C_END 󰁔 "
 	else
-		PS1="$C_BLUE\w\n$C_END  󱞩 $C_GREEN\u@\h $C_RED\$$C_END "
+		PS1="$C_BLUEB\w\n$C_END  󱞩 "
 	fi
+	PS1+="$C_MAGENTA[\t]$C_END $C_GREEN\u@\h$C_END $C_BLUE\$$C_END "
 }			
 
 #PS1="$C_BLACK$CB_BLUE$C_WHITE$CB_BLUE \t $C_BLUE$CB_LBLUE$C_WHITE$CB_LBLUE \u@\h $C_LBLUE$CB_CYAN$C_BLACK$CB_CYAN \w $C_CYAN$CB_LCYAN$C_BLACK$CB_LCYAN \$ $C_LCYAN$C_END "

@@ -38,6 +38,8 @@ alias nnn='nnn -H -e'
 alias hypr='cd ~/.config/hypr/'
 alias edith='vim ~/.config/hypr/hyprland.conf'
 alias editb='vim ~/.bashrc'
+alias editn='vim ~/.config/neofetch/config.conf'
+alias editk='vim ~/.config/kitty/kitty.conf'
 alias spotify='flatpak run com.spotify.Client'
 alias discord='flatpak run com.discordapp.Discord'
 

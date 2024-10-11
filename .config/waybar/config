@@ -78,9 +78,9 @@
 			"window-rewrite-default": "",
 			"window-rewrite": {
 			"class<.*firefox.*>": "",
-			"title<.*nnn.*>": "󰉖",
+			"class<.*kitty.*> title<nnn>": "󰉖",
 			"class<.*kitty.*>": "",
-			"title<.*vim.*>": "󰷈",
+			"class<.*kitty.*> title<vim.*>": "󰷈",
 			"class<.*discord.*>": "",
 			"class<.*gimp.*>": "",
 			"class<.*spotify.*>": ""

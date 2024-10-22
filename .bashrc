@@ -65,11 +65,11 @@ CB_WHITE='\e[107m'
 C_END='\e[0m'
 
 check_path () {
-	PS1="$C_MAGENTA[\t]$C_END"
+	PS1="$C_MAGENTA\t$C_END"
 	if [[ "$PWD" -ef "$HOME" ]]; then 
 		PS1+="\n$C_BLUE\w$C_END 󰁔 "
 	else
-		PS1+=" $C_BLUE\w\n$C_END  󱞩 "
+		PS1+=" $C_BLUE<\w>\n$C_END  󱞩 "
 	fi
 	PS1+="$C_GREEN\u@\h$C_END$C_BLUE\$$C_END "
 }			

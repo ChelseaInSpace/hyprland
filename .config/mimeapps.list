@@ -1,3 +1,5 @@
 [Default Applications]
 image/jpeg=kitty-open.desktop
 image/png=kitty-open.desktop
+application/json=vim.desktop
+text/plain=vim.desktop

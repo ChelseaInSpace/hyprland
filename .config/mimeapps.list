@@ -2,4 +2,5 @@
 image/jpeg=kitty-open.desktop
 image/png=kitty-open.desktop
 application/json=vim.desktop
+application/x-executable=kitty.desktop
 text/plain=vim.desktop

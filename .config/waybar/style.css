@@ -4,20 +4,8 @@
 }
 
 window#waybar {
-	background: #292b2e;
+	background: none;
 	color: #ececec;
-}
-
-#custom-right-arrow-dark,
-#custom-left-arrow-dark {
-	font-size: 20px;
-	color: #1a1a1a;
-}
-#custom-right-arrow-light,
-#custom-left-arrow-light {
-	font-size: 20px;
-	color: #292b2e;
-	background: #1a1a1a;
 }
 
 #custom-icon {
@@ -25,9 +13,7 @@ window#waybar {
 }
 
 #custom-icon,
-#clock.1,
-#clock.2,
-#clock.3,
+#clock,
 #pulseaudio,
 #memory,
 #cpu,
@@ -35,23 +21,40 @@ window#waybar {
 #disk,
 #backlight,
 #window,
+#workspaces,
 #tray {
 	font-size: 18px;
 	font-family: "BitstromWera Nerd Font";
-	background: #1a1a1a;
+	background: rgba (0, 0, 0, 0.7);
+	border-radius: 12px;
+	margin: 4 3;
+}
+
+#clock {
+	padding: 4 10;
+}
+
+#memory, #pulseaudio, #cpu, #battery, #disk, #backlight{
+	padding: 4 18 4 8;
+}
+
+#custom-icon {
+ 	padding: 0 0 0 8;      
+}
+
+#tray {
+	padding: 0 4 0 6;
 }
 
 #workspaces {
   font-size: 24px;
-  background: #1a1a1a;
+  padding: 0 5;
   }
 
 #workspaces button {
 	margin: 0px 2px 0px 2px;
 	padding: 0px 10px 0px 2px;
 	color: #fdf6e3;
-	border: 1px solid #fdf6e3;
-	border-radius: 5px;
 }
 
 #workspaces button.empty {
@@ -59,13 +62,10 @@ window#waybar {
 }
 
 #workspaces button.active {
-	/*color: #268bd2;*/
 	color: #9525ff;
-	border: 1px solid #9525ff;
 }
 
 #workspaces button:hover {
-	border: 1px solid #9525ff;
 	color: #9525ff;
 }
 
@@ -91,25 +91,8 @@ window#waybar {
 #window {
 	padding: 0 10px;
 	color: #9525ff;
-	background: #1a1a1a;
 }
 
 window#waybar.empty #window{
 	min-width: 20px;
-}
-
-#tray {
-	padding: 0 6px 0 4px;
-}
-
-#clock {
-	padding: 0 10px;
-}
-#pulseaudio,
-#memory,
-#cpu,
-#battery,
-#backlight,
-#disk {
-  padding: 0 15px 0 10px;
 }

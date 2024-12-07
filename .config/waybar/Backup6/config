@@ -3,6 +3,7 @@
 {
 	"layer": "top",
 	"position": "top",
+	"margin": "3 8",
 
 	"modules-left": [
 		"hyprland/workspaces",

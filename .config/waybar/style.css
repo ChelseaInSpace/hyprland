@@ -26,37 +26,41 @@ window#waybar {
 	font-size: 18px;
 	font-family: "BitstromWera Nerd Font";
 	background: rgba (0, 0, 0, 0.7);
-	border-radius: 18px;
-	margin: 3 0;
+	border-radius: 0 0 12 12;
+	margin: 0 0 2 0;
 }
 
 #clock {
+	font-size: 19px;
 	padding: 0 10;
 }
 
 #memory, #pulseaudio, #cpu, #battery, #disk, #backlight{
-	padding: 4 18 4 8;
+	padding: 2 18 4 8;
 }
 
 #custom-icon {
-	margin: 3 4 3 8;
- 	padding: 0 0 0 8;      
+	margin: 0 0 2 8;
+ 	padding: 2 0 4 10;
+	border-radius: 0 0 0 12;	
 }
 
 #tray {
-	margin: 3 8;
-	padding: 0 8 0 10;
+	margin: 0 8 2 8;
+	padding: 2 8 4 10;
 }
 
 #window {
-	margin: 3 4;
+	margin: 0 4 2 4;
+	padding: 4 0;
 }
 
 #workspaces {
-  font-size: 24px;
-  padding: 0 5;
-  margin: 3 4;
-  }
+	font-size: 24px;
+	padding: 4 5;
+	margin: 0 4 2 0;
+	border-radius: 0 0 12 0;
+}
 
 #workspaces button {
 	margin: 0px 2px 0px 2px;
@@ -80,21 +84,26 @@ window#waybar {
 	border-radius: 0px;
 	color: #268bd2;
 }
+
 #memory {
-	border-radius: 18 0 0 18;
+	border-radius: 0 0 0 12;
 	color: #2aa198;
 }
+
 #cpu {
 	color: #6c71c4;
 }
+
 #battery {
-	border-radius: 0 18 18 0;
+	border-radius: 0 0 12 0;
 	color: #46b40e;
 }
+
 #backlight {
 	border-radius: 0px;
 	color: #ffd966;
 }
+
 #disk {
 	color: #b58900;
 }

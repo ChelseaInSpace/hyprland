@@ -21,6 +21,7 @@ window#waybar {
 #disk,
 #backlight,
 #window,
+#temperature,
 #workspaces,
 #tray {
 	font-size: 18px;
@@ -35,7 +36,7 @@ window#waybar {
 	padding: 0 10;
 }
 
-#memory, #pulseaudio, #cpu, #battery, #disk, #backlight{
+#memory, #pulseaudio, #temperature, #cpu, #battery, #disk, #backlight{
 	padding: 2 18 4 8;
 }
 
@@ -91,7 +92,13 @@ window#waybar {
 	color: #2aa198;
 }
 
+#temperature {
+	border-radius: 0px;
+	color: #cc0a0a;
+}
+
 #cpu {
+	border-radius: 0px;
 	color: #6c71c4;
 }
 
@@ -106,6 +113,7 @@ window#waybar {
 }
 
 #disk {
+	border-radius: 0px;
 	color: #b58900;
 }
 

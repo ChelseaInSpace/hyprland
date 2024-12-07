@@ -12,7 +12,6 @@
 	],
 	"modules-right": [
 		"tray",
-		"memory",
 		"pulseaudio",
 		"backlight",
 		"battery",

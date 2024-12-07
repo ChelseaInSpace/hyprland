@@ -27,7 +27,7 @@ window#waybar {
 	font-family: "BitstromWera Nerd Font";
 	background: rgba (0, 0, 0, 0.7);
 	border-radius: 0 0 12 12;
-	margin: 0 0 3 0;
+	margin: 0 0 2 0;
 }
 
 #clock {
@@ -39,24 +39,26 @@ window#waybar {
 }
 
 #custom-icon {
-	margin: 0 4 3 8;
- 	padding: 4 0 4 8;      
+	margin: 0 0 2 8;
+ 	padding: 2 0 4 10;
+	border-radius: 0 0 0 12;	
 }
 
 #tray {
-	margin: 0 8 3 8;
+	margin: 0 8 2 8;
 	padding: 4 8 4 10;
 }
 
 #window {
-	margin: 0 4 3 4;
+	margin: 0 4 2 4;
 	padding: 4 0;
 }
 
 #workspaces {
 	font-size: 24px;
 	padding: 4 5;
-	margin: 0 4 3 4;
+	margin: 0 4 2 0;
+	border-radius: 0 0 12 0;
 }
 
 #workspaces button {

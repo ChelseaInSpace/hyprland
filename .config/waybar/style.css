@@ -55,14 +55,16 @@ window#waybar {
 #window {
 	margin: 3 0 3 0;
 	border-radius: 0 18 18 0;
+	padding: 0 10 0 0px;
+	color: #9525ff;
 }
 
 #workspaces {
-  font-size: 24px;
-  padding: 0 5;
-  margin: 3 0 3 4;
-  border-radius: 18 0 0 18;
-  }
+  	font-size: 24px;
+  	padding: 0 5;
+  	margin: 3 0 3 4;
+  	border-radius: 18 0 0 18;
+}
 
 #workspaces button {
 	margin: 0px 2px 0px 2px;
@@ -119,11 +121,6 @@ window#waybar {
 #disk {
 	padding: 4 8 4 8;
 	color: #b58900;
-}
-
-#window {
-	padding: 0 10 0 0px;
-	color: #9525ff;
 }
 
 window#waybar.empty #window{

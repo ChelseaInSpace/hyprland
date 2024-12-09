@@ -32,8 +32,8 @@ window#waybar {
 
 #clock {
 	border-radius: 18px;
-	padding: 0 10;
-	margin: 3 5;
+	padding: 0 15;
+	margin: 3 0;
 }
 
 #memory, #pulseaudio, #cpu, #battery, #temperature, #disk, #backlight{

@@ -74,11 +74,11 @@
 		"on-click-right": "pavucontrol"
 	},
 	"memory": {
-		"interval": 5,
+		"interval": 2,
 		"format": "{}% "
 	},
 	"cpu": {
-		"interval": 5,
+		"interval": 2,
 		"format": "{usage:2}% "
 	},
 	"battery": {
@@ -106,7 +106,7 @@
 		"path": "/"
 	},
 	"temperature": {
-		"interval": 5,
+		"interval": 1,
 		"format": "{temperatureC}°C "
 	},
 	"tray": {

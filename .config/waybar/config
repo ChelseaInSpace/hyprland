@@ -43,7 +43,7 @@
 
 	"clock": {
 		"timezone":"Europe/Berlin",
-		"format": "{:%A  %d.%m %H:%M}",
+		"format": "{:%A  %d.%m  %H:%M}",
 		"tooltip": false
 	},
 

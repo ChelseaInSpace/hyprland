@@ -12,6 +12,10 @@
 	],
 	"modules-right": [
 		"tray",
+		"cpu",
+		"memory",
+		"temperature",
+		"disk",
 		"pulseaudio",
 		"backlight",
 		"battery",
@@ -70,12 +74,12 @@
 		"on-click-right": "pavucontrol"
 	},
 	"memory": {
-		"interval": 5,
+		"interval": 2,
 		"format": "{}% "
 	},
 	"cpu": {
-		"interval": 5,
-		"format": "CPU {usage:2}%"
+		"interval": 2,
+		"format": "{usage:2}% "
 	},
 	"battery": {
 		"states": {
@@ -98,11 +102,14 @@
 	},
 	"disk": {
 		"interval": 5,
-		"format": "Disk {percentage_used:2}%",
+		"format": "{percentage_used:2}% 󱛟",
 		"path": "/"
 	},
+	"temperature": {
+		"interval": 1,
+		"format": "{temperatureC}°C "
+	},
 	"tray": {
-		"show-passive-items": true,
 		"icon-size": 20,
 		"spacing": 4
 	}
